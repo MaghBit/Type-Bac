@@ -1,0 +1,9 @@
+def pareille(mot,mot_a_trou):
+    if len(mot)!=len(mot_a_trou):
+        return False
+    for i in range(len(mot)):
+        if mot_a_trou[i]!="*" and mot[i]!=mot_a_trou[i]:
+            return False
+    return True
+print(pareille("mot","m*p"))
+
